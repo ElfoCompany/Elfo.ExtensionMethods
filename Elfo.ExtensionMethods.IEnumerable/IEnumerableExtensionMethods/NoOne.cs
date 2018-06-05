@@ -25,6 +25,7 @@ namespace Elfo.ExtensionMethods.IEnumerable
         /// <returns> 
         /// true if no elements in the source sequence pass the test in the specified predicate;
         /// otherwise, false.</returns>
+        /// <exception cref="ArgumentNullException">Source is null.</exception>
         public static bool NoOne<T>(this IEnumerable<T> source, Predicate<T> predicate) => source.Any(e => !predicate(e));
     }
 }
