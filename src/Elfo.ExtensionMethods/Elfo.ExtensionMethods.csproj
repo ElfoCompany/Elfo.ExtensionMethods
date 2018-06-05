@@ -16,5 +16,8 @@
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>NETSTD20</DefineConstants>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elfo.ExtensionMethods.IEnumerable\Elfo.ExtensionMethods.IEnumerable.csproj" />
+  </ItemGroup>
 
 </Project>
