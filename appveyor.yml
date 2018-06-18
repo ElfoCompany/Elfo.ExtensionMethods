@@ -1,4 +1,4 @@
-version: '1.0.{build}'
+version: '0.0.{build}'
 image: Visual Studio 2017
 branches:
   only:
@@ -10,25 +10,25 @@ install:
   # Install repo specific stuff here
 before_build:
   # Display .NET Core version
-  - cmd: dotnet --version
+  #- cmd: dotnet --version
   # Display minimal restore text
-  - cmd: dotnet restore ./src/**/*.csproj --verbosity m
+  #- cmd: dotnet restore ./src/**/*.csproj --verbosity m
 build_script:
   # output will be in ./src/bin/debug/netcoreapp1.1/publish
-  - cmd: dotnet publish ./src/**/*.csproj
+  #- cmd: dotnet publish ./src/**/*.csproj
 after_build:
   # For once the build has completed
 artifacts:
- - path: '\src\bin\Debug\netcoreapp1.1\publish'
-   name: WebSite
-   type: WebDeployPackage
+ #- path: '\src\bin\Debug\netcoreapp1.1\publish'
+   #name: WebSite
+   #type: WebDeployPackage
 clone_depth: 1
 test_script:
   # restore packages for our unit tests
-  - cmd: dotnet restore ./tests/**/*.csproj --verbosity m
+ # - cmd: dotnet restore ./tests/**/*.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
-  - cmd: cd tests
-  - cmd: dotnet xunit
+  #- cmd: cd tests
+  #- cmd: dotnet xunit
 on_finish :
   # any cleanup in here
 deploy: off
