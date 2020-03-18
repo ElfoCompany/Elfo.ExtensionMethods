@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Elfo.ExtensionMethods.IEnumerable
 {
-   public static partial class IEnumerableExtensionMethods
+    public static partial class IEnumerableExtensionMethods
     {
         /// <summary>
         /// Filters a sequence of values based on a predicate.

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A51DA5B6-DF7E-40FA-835A-B820F9F54795}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2783273C-800E-45C5-9D7C-8AE14F2BB849}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elfo.ExtensionMethods", "src\Elfo.ExtensionMethods\Elfo.ExtensionMethods.csproj", "{C3C20298-52CF-4DDB-98D7-ACC924C58808}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elfo.ExtensionMethods.IEnumerable", "src\Elfo.ExtensionMethods.IEnumerable\Elfo.ExtensionMethods.IEnumerable.csproj", "{1D543277-D778-4431-A829-1CFB56DC4A2C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A51DA5B6-DF7E-40FA-835A-B820F9F54795}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2783273C-800E-45C5-9D7C-8AE14F2BB849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elfo.ExtensionMethods.Cryptography", "src\Elfo.ExtensionMethods.Cryptography\Elfo.ExtensionMethods.Cryptography.csproj", "{3F38ED55-4C03-4ADC-8964-0B63494144D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{1D543277-D778-4431-A829-1CFB56DC4A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D543277-D778-4431-A829-1CFB56DC4A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D543277-D778-4431-A829-1CFB56DC4A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F38ED55-4C03-4ADC-8964-0B63494144D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F38ED55-4C03-4ADC-8964-0B63494144D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F38ED55-4C03-4ADC-8964-0B63494144D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F38ED55-4C03-4ADC-8964-0B63494144D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C3C20298-52CF-4DDB-98D7-ACC924C58808} = {A51DA5B6-DF7E-40FA-835A-B820F9F54795}
 		{1D543277-D778-4431-A829-1CFB56DC4A2C} = {A51DA5B6-DF7E-40FA-835A-B820F9F54795}
+		{3F38ED55-4C03-4ADC-8964-0B63494144D2} = {A51DA5B6-DF7E-40FA-835A-B820F9F54795}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05B3734F-5817-4539-9E29-93CB49989893}
